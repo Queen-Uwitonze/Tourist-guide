@@ -1,0 +1,5 @@
+body{
+    border:2px solid lightgreen;
+    color:lightgreen;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
