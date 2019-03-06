@@ -1,10 +1,27 @@
 body{
-    border:2px solid lightgreen;
-    color:lightgreen;
-    /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+    border:2px solid cyan;
+    color:lcyan;
+    background-size:cover;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://2.bp.blogspot.com/-3iFT66D8l54/UOiHA-aqn2I/AAAAAAAAWrM/Hd125Ij9e8A/s1600/Rwanda.jpg');
+}
+h1{
+    color:cyan;
 }
 /* .container{
     list-style-type: none;
     margin: 0;
     padding: 0;
   } */
+
+a{
+    color:cyan; 
+}
+h3{
+    color:cyan;
+}
+p{
+    color:cyan;
+}
+#myCarousel{
+    border:2px solid cyan;
+}
