@@ -1,27 +1,40 @@
 body{
-    border:2px solid cyan;
-    color:lcyan;
-    background-size:cover;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://2.bp.blogspot.com/-3iFT66D8l54/UOiHA-aqn2I/AAAAAAAAWrM/Hd125Ij9e8A/s1600/Rwanda.jpg');
+    border:2px solid darkslategrey;
+    color:darkslategrey;
 }
 h1{
-    color:cyan;
+    color:darkslategrey;
 }
-/* .container{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  } */
-
 a{
-    color:cyan; 
+    color:darkslategrey; 
 }
 h3{
-    color:cyan;
+    color:white;
 }
 p{
-    color:cyan;
+    color:white;
 }
-#myCarousel{
-    border:2px solid cyan;
-}
+/* 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  } */
+
+  nav{
+      text-decoration: none;
+      margin:20px;
+  }
