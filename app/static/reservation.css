@@ -1,5 +1,25 @@
-.title{
+h1{
     display: inline; 
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
+    color:green;
+}
+
+nav{
+    text-decoration: none;
+    margin:20px;
+    margin-right:10px;
+}
+.navbar a{
+  margin-left:100px;
+  font-family: monospace;
+  padding:10px;
+  text-decoration-style: double;
+}
+a{
+  color:darkslategrey;
+  font-family: monospace;
+}
+*{
+    background-color: gainsboro;
 }

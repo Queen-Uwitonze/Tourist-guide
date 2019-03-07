@@ -8,8 +8,8 @@ def reservation():
     title = 'Hotels in Rwanda'
     return render_template('reservation.html',title = title)
 
-@app.route('/accommodation') 
-def accommodation(id):
+@app.route('/transport') 
+def transport():
 
 
-    return render_template('accommodation.html')
+    return render_template('transport.html')

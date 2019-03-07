@@ -1,53 +1,85 @@
+
+{% block styles%}
+
+<link rel="stylesheet" href="{{url_for('static',filename='reservation.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+{% endblock %}
+<center><div class="navbar">
+   <nav>
+       <a class="active" href="Home.html"><i class="fa fa-home fa-1.9x"></i> Home</a>
+       <a href="touristic.html"><i class="fa fa-suitcase fa-1.9x"></i>  Touristic Sites</a>
+       <a href="/"><i class="fa fa-hotel fa-1.9x"></i>  Reservation</a>
+       <a href="chat.html"><i class="fa fa-comment fa-1.9x"></i>  Chat/help</a>
+
+   </nav>
+</div></center>
 <div class="title">
-<h1>{{title}}</h1>
+<center><h1>{{title}}</h1></center>
 </div>
 
-<a href="https://www.radissonblu.com/en/hotel-kigali"> <img border="0" alt="Raddissonblu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTg9tVdWdrMz4GUYg3StaP-WutOxpK5PoETj7IbcvO6F5q4_9u" width="500" height="250"><br></a>
-<br><strong>Hotel in Kigali | Radisson Blu Hotel & Convention Centre</strong>
-<p>Enjoy modern accommodation and excellent on-site meeting facilities at the Radisson Blu Hotel <br>
-   & Convention Centre in Kigali, just 5km from the city center.</p>
+<center><div class="container">
+<a href="/transport">Transportation</a><br><br>
 
-<a href="https://www.marriott.com/hotels/travel/kglmc-kigali-marriott-hotel/"> <img border="0" alt="marriott" src="https://cache.marriott.com/marriottassets/marriott/KGLMC/kglmc-exterior-0030-hor-feat.jpg?interpolation=progressive-bilinear&downsize=1180px:*" width="500" height="250"><br></a>
-<br><strong>Hotel Marriott</strong>
-<p><strong>Discover Kigali in 5-star fashion at our hotel</strong></p>
+<br><strong>Hotel in Kigali | Radisson Blu Hotel & Convention Centre</strong><br><br>
+<a href="https://www.radissonblu.com/en/hotel-kigali"> <img border="0" alt="Raddissonblu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTg9tVdWdrMz4GUYg3StaP-WutOxpK5PoETj7IbcvO6F5q4_9u" width="500" height="250"><br></a>
+
+<p><br>Enjoy modern accommodation and excellent on-site meeting facilities at the Radisson Blu Hotel <br>
+   & Convention Centre in Kigali, just 5km from the city center.<a href="https://www.radissonblu.com/en/hotel-kigali">For more</a></p>
+
+<br><strong>Hotel Marriott</strong><br><br>
+<a href="https://www.marriott.com/hotels/travel/kglmc-kigali-marriott-hotel/"> <img border="0" alt="marriott" src="https://cache.marriott.com/marriottassets/marriott/KGLMC/kglmc-exterior-0030-hor-feat.jpg?interpolation=progressive-bilinear&downsize=1180px:*" width="500" height="250"></a>
+
+<p><br><strong>Discover Kigali in 5-star fashion at our hotel</strong></p><br>
 <p>Experience Rwanda's capital with a visit to Kigali Marriott Hotel. Conveniently located near the financial district,<br>
    our hotel showcases luxury amenities and impeccable service.<br> 
    Make yourself comfortable in our stylish room or suite and enjoy perks such as floor-to-ceiling windows,<br>
-   complimentary internet access for Marriott Bonvoy Members and plush pillow top bedding.<br></p>
+   complimentary internet access for Marriott Bonvoy Members and plush pillow top bedding.<br><a href="https://www.marriott.com/hotels/travel/kglmc-kigali-marriott-hotel/">For more</a></a></p>
 
+   <br><strong>Hotel Des Milles Collines</strong><br><br>
 <a href="https://www.millecollines.rw/"> <img border="0" alt="mille colline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDX2Xe8BDguwI3LMaU3tQBvkauc7hfTPNW2SbWiLLPrEPDEUjY" width="400" height="250"><br></a>
-<br><strong>Hotel Des Milles Collines</strong>
+
 <br><strong>The legacy of hospitality in Rwanda for more than 40 years</strong>
-<p>Inspired by Rwanda’s unforgettable geographical terrain, 
+<p><br>Inspired by Rwanda’s unforgettable geographical terrain, 
    <br>the hotel derives its name from its motherland known as the “land of a thousand hills.”
    <br> Inaugurated in 1973 as the premier grand hotel of the country and becoming a shelter to, <br>
    a light of hope in the darkness for a terrified crowd of up to 2,000 people <br>
    who were saved by the hotel opening its doors in 1994 during the Genocide against the Tutsi;<br>
-  Hôtel des Mille Collines is surely the most famous hotel in Rwanda.</p>
+  Hôtel des Mille Collines is surely the most famous hotel in Rwanda.<a href="https://www.millecollines.rw/">For more</a></p>
 
+<br><strong>Serena Hotel Kigali</strong><br><br>
 <a href="https://www.serenahotels.com/serenakigali/en/default.html"> <img border="0" alt="KigaliSerena" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm6VOPTcm5xW2-uaBmQoaMRP_Ad4JqLOgFiLPzMSkBSp7GVk51Jw" width="500" height="250"><br></a>
-<br><strong>Serena Hotel Kigali</strong>
-<p>Kigali Serena Hotel official site. Book a 5-star hotel in the heart of Kigali.<br>
+
+<p><br>Kigali Serena Hotel official site. Book a 5-star hotel in the heart of Kigali.<br>
    Elegant accommodation, fine dining and a state of the art conference centre<br> 
-   at one the best hotels in Rwanda. </p>
-
+   at one the best hotels in Rwanda.<a href="https://www.serenahotels.com/serenakigali/en/default.html">For more</a> </p>
+   <br>
+<br><strong>Lake Kivu Serena Hotel | Hotel Gisenyi | Lake Kivu</strong><br><br>
 <a href="https://www.serenahotels.com/serenalakekivu/en/default.html"> <img border="0" alt="GisenyiSerena" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13rL-m9Mpv_mzRQnrzkYTEpGoCPB0FNmjLdkXHbbCzRuOnhL0_A" width="500" height="250"><br></a>
-<br><strong>Lake Kivu Serena Hotel | Hotel Gisenyi | Lake Kivu</strong>
-<p>Lake Kivu Serena Hotel official site. <br>
-Book your stay at a stylish hotel in Gisenyi, Rwanda featuring a private Lake Kivu beach, 
-<br>well-appointed rooms and suites, and exceptional dining.</p>
 
+<p><br>Lake Kivu Serena Hotel official site. <br>
+Book your stay at a stylish hotel in Gisenyi, Rwanda featuring a private Lake Kivu beach, 
+<br>well-appointed rooms and suites, and exceptional dining.<a href="https://www.serenahotels.com/serenalakekivu/en/default.html">For more</a></p>
+
+<a href="https://www.uniqhotels.com/bisate-lodge"> <img border="0" alt="Bisate" src="https://www.uniqhotels.com/media/hotels/f1/1._bisatelodge-10.jpg.730x486_q85_box-0%2C0%2C1600%2C1067_crop_detail.jpg" width="500" height="250"><br></a>
+
+<p>Located in Rwanda, Bisate Lodge is the perfect place for any wildlife enthusiast.<br>
+   If volcanoes are your thing too, you’re in luck! The lodge is set in<br>
+   an eroded volcanic cone and offers views of the volcanoes Bisoke, Karisimbi and Mikeno. 
+   <br>With just six suites, Bisate caters to those who are looking for a true break <br>
+   from society and an adventure into the wild.<a href="https://www.uniqhotels.com/bisate-lodge">For more</a></p>
+<br><strong>Hotel Muhabura</strong><br><br>
 <a href="http://www.muhaburahotel.com/"> <img border="0" alt="HotelMuhabura" src="http://www.muhaburahotel.com/wp-content/uploads/2016/08/cropped-Muhaburahotel-pic-2.jpg" width="500" height="250"><br></a>
-<br><strong>Hotel Muhabura</strong>
-<p>This corner or northwestern Rwanda is a breath-taking unforgettable place where culture, adventure and conservation intersect.
+
+<div>
+<p><br>This corner or northwestern Rwanda is a breath-taking unforgettable place where culture, adventure and conservation intersect.
    <br>The "Parc National de Volcanoes" (or PNV as it's known by locals) lies along the Virunga Mountains,
    <br> with 8 ancient volcanoes, which are shared by Rwanda, Uganda and the Democratic Republic of Congo. <br>
    Just a short two hour drive from Rwanda's capital of Kigali, <br>
    the park is a central location for exploring some distinctly Rwandan experiences. <br>
    While a visit to the mountain gorillas is often at the top of visitor, <br>
-   the dramatic landscape also offers thrilling hiking and visits to the fascinating golden monkeys.</p>
-
-
+   the dramatic landscape also offers thrilling hiking and visits to the fascinating golden monkeys.<a href="http://www.muhaburahotel.com/">For more</a></p>
+</div>
+</div></center>
 
 
 

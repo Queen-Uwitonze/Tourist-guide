@@ -1,0 +1,9 @@
+*{
+    background-color: gainsboro;
+}
+h1{
+    display: inline; 
+    /* width: 100px;
+    height: 100px; */
+    color:green;
+}
