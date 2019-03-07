@@ -3,12 +3,12 @@
 {% block content %}
 
       
-<div class="col-md-4">
+<div class="container">
+
         {{ wtf.quick_form(comment_form) }}
         {% for comment in comments%} 
    <p>{{comment.comments}}</p> 
 
   {% endfor %}
-
-    </div>
+</div>
  {% endblock %}
