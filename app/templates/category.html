@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<!-- Styles block -->
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='CSS/index.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-3" text-align="center">
+
+  <div class="selectpitch">
+
+    <a href="{{url_for('main.Volcanos')}}">Volcanos National Park|</a>&nbsp;
+    <a href="{{url_for('main.Akagera')}}">Akagera National Park |</a>&nbsp;
+    <a href="{{url_for('main.Royal')}}"> Royal Palace, Nyanza|</a>&nbsp;
+    <a href="{{url_for('main.Nyungwe')}}">Nyungwe Forest National Park|</a>&nbsp;
+
+    <a href="{{url_for('main.Gisuma')}}">Gisuma|</a>&nbsp;
+    <a href="{{url_for('main.Kivu')}}"> Gishwati Forest National Park|</a>&nbsp;
+
+
+  </div>
+</div>
+{% endblock %}

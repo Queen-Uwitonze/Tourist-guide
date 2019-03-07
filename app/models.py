@@ -13,8 +13,8 @@ class Map(db.Model):
         db.session.commit()
     
     @classmethod
-    def get_maps(id):
-        maps = Map.query.filter_by(id=maps_id).all()
+    def get_mapview():
+        maps = Map.query.filter_by().all()
         return maps
 
     def __repr__(self):

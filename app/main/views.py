@@ -1,15 +1,43 @@
-import flask
-from flask import request, url_for, render_template, redirect
 from . import main
+from flask import Flask, render_template
+from flask_googlemaps import GoogleMaps
 from ..models import  Map,Site
+from flask_googlemaps import Map
+
+app = Flask(__name__, template_folder=".")
+GoogleMaps(app)
+
+@main.route("/")
+def mapview():
+    # creating a map in the view
+    mymap = Map(
+        identifier="view-side",
+        lat=37.4419,
+        lng=-122.1419,
+        markers=[(37.4419, -122.1419)]
+    )
+    sndmap = Map(
+        identifier="sndmap",
+        lat=37.4419,
+        lng=-122.1419,
+        markers=[
+          {
+             'icon': 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+             'lat': 37.4419,
+             'lng': -122.1419,
+             'infobox': "<b>Hello World</b>"
+          },
+          {
+             'icon': 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+             'lat': 37.4300,
+             'lng': -122.1400,
+             'infobox': "<b>Hello World from other place</b>"
+          }
+        ]
+    )
+    return render_template('map.html', mymap=mymap, sndmap=sndmap)
 
 
-@main.route('/',methods=['GET','POST'])
-def my_maps():
-
-  mapbox_access_token = 'AIzaSyAt9PFcZklUveOfa6E7KYzLYLSQvGGfmqw'
-  title="Tour app"
-  return render_template('map.html',title=title,mapbox_access_token=mapbox_access_token)
 
 @main.route('/Volcanos')
 def Volcanos():
@@ -39,22 +67,17 @@ def Nyungwe():
 @main.route('/Kivu')
 def Kivu():
     Kivu_sites = Site.query.filter_by(category='Kivu').all()
-    return render_template('map.html', Kivu=Kivu_sites)
+    return render_template('kivu.html', Kivu=Kivu_sites)
 
 @main.route('/Gisuma')
 def Gisuma():
     Gisuma_sites = Site.query.filter_by(category='Gisuma').all()
-    return render_template('map.html', Gisuma=Gisuma_sites)
+    return render_template('gisuma.html', Gisuma=Gisuma_sites)
 
 @main.route('/Gishwati')
 def Gishwati():
     Gishwati_sites = Site.query.filter_by(category='Gishwati').all()
-    return render_template('map.html', Gishwati=Gishwati_sites)
-
-@main.route('/Kibuye')
-def Kibuye():
-    Kibuye_sites = Site.query.filter_by(category='Kibuye').all()
-    return render_template('map.html', Kibuye=Kibuye_sites)
+    return render_template('gishwati.html', Gishwati=Gishwati_sites)
 
 
 
