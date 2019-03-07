@@ -37,4 +37,11 @@ p{
   nav{
       text-decoration: none;
       margin:20px;
+      margin-right:10px;
   }
+.navbar a{
+    margin-left:100px;
+    font-family: monospace;
+    padding:10px;
+    text-decoration-style: double;
+}
