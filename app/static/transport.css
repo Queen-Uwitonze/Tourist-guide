@@ -7,3 +7,24 @@ h1{
     height: 100px; */
     color:rgb(44, 70, 44);
 }
+nav{
+    text-decoration: none;
+    margin:20px;
+    margin-right:10px;
+}
+.navbar a{
+  margin-left:100px;
+  font-family: monospace;
+  padding:10px;
+  text-decoration-style: double;
+}
+a{
+  color:darkslategrey;
+  font-family: monospace;
+}
+*{
+    
+    color:darkslategrey;
+    background-color:ghostwhite;
+    font-family: monospace;
+}
