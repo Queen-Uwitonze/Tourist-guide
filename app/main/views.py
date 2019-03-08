@@ -8,10 +8,13 @@ from .. import db
 # Views
 @main.route('/')
 def index():
+
     '''
     View root page function that returns the index page and its data
     '''
-    title = 'Home - Welcome '
+    
+
+    title = 'Homepage-Touristic Guide App'
     comments=Comment.get_comments()
     
     return render_template('index.html', title = title ,comments=comments)

@@ -1,0 +1,47 @@
+body{
+    border:2px solid darkslategrey;
+    color:darkslategrey;
+}
+h1{
+    color:darkslategrey;
+    font-family: monospace;
+}
+a{
+    color:darkslategrey; 
+    font-family: monospace;
+}
+h3{
+    color:white;
+    font-family: monospace;
+}
+p{
+    color:white;
+    font-family: monospace;
+}
+nav{
+    text-decoration: none;
+    margin:20px;
+    margin-right:10px;
+  }
+.navbar a{
+    margin-left:100px;
+    font-family: monospace;
+    padding:10px;
+    text-decoration-style: double;
+}
+.explan{
+    font-family: monospace;
+}
+footer{
+    font-family: monospace;
+}
+ 
+nav a:hover {
+    background-color:lightgrey ;
+}
+
+ 
+.hover a:hover{
+    opacity:1;
+ }
+ 
