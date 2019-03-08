@@ -15,9 +15,9 @@ def index():
     
 
     title = 'Homepage-Touristic Guide App'
-    comments=Comment.get_comments()
+    # comments=Comment.get_comments()
     
-    return render_template('index.html', title = title ,comments=comments)
+    return render_template('index.html', title = title )
 
 
 @main.route('/comment/new', methods=['GET', 'POST'])
