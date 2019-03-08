@@ -23,3 +23,54 @@ a{
 *{
     background-color: gainsboro;
 }
+.conv{
+    float: left;
+}
+.conv p{
+    float: left;
+}
+.marrio{
+    float: right;
+}
+.marrio p {
+    float:right;
+}
+.mille{
+    float: left;
+}
+.serena{
+    float: right;
+}
+.serenagi{
+    float: left;
+}
+.bisate{
+    float: right;
+}
+.muhabura{
+    float: left;
+}
+.sunview{
+    float: right;
+}
+.asante{
+    float: left;
+}
+.palm{
+    float: right;
+}
+.lapalme{
+    float: left;
+}
+.virunga{
+    float: right; 
+}
+.Belvedere{
+    float: left;
+}
+.hillview{
+    float: right;
+}
+.paradise{
+    float: left;
+}
