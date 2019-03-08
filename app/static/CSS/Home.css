@@ -35,3 +35,13 @@ nav{
 footer{
     font-family: monospace;
 }
+ 
+nav a:hover {
+    background-color:lightgrey ;
+}
+
+ 
+.hover a:hover{
+    opacity:1;
+ }
+ 
