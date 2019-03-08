@@ -8,6 +8,14 @@ app = Flask(__name__, template_folder=".")
 GoogleMaps(app)
 
 @main.route("/")
+def sitesview():
+
+    title="Nices places to visit in Rwanda"
+    return render_template('category.html', title=title)
+
+
+
+@main.route("/map")
 def mapview():
     # creating a map in the view
     mymap = Map(
@@ -35,7 +43,7 @@ def mapview():
           }
         ]
     )
-    return render_template('map.html', mymap=mymap, sndmap=sndmap)
+    return render_template('maps.html', mymap=mymap, sndmap=sndmap)
 
 
 

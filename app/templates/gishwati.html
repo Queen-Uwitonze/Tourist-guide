@@ -1,39 +1,43 @@
+{% extends 'bootstrap/base.html'%}
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
 {% block styles%}
 {{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='CSS/index.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='CSS/index2.css')}}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 {% endblock %}
-
-<body>
-  <div class="jumbotron text-center">
-    <h1>Gishwati-Mukura National Park</h1>
-  </div>
-  <div class="well">
-    <img src="images/balls5.jpg" width="100%" height="400">
-    <div class="row">
-      <div class="col-md-4">
-
-        <h2>Gishwati-Mukura</h2>
-        <p>Gishwati-Mukura National Park is situated on the highest ridges of the Congo-Nile Divide along the
-          incredibly
-          biodiverse Albertine Rift in the west of the country.
-          Created only in 2015, this is Rwanda’s newest national park and one that plays an incredibly important role …
-          not
-          only in biodiversity conservation, but also in preserving and improving ecosystem services and in providing
-          an
-          economic engine for the upliftment of the surrounding communities that are integrally involved in its
-          protection.</p>
-      </div>
-      <div class="col-md-4">
-        <p>Here visitors can experience not only chimpanzee and primate tracking, pristine montane forests and some of
-          Rwanda’s most exciting birding, but can also engage with friendly, rural people and know that their visit
-          will make
-          a difference!.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxA_WY9V3ka1XQqgYeaSTp_b4hYiutFKr5YPCTHlsSXFwdCTnTw">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbvHpoauKBFhaGD-AgKt3ILIaDVdJF0eRyjghhoQyC5vJpbDHy">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAn10GxPzFBav0WxgLBK-c1d8oppXVHLUc7TCNshsXLJTHTYRm">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs4ncqde6nK_t48sHOU3Fh694ptrt2qmlIHHEv-m17IF_cE7Dw">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghX0okwEffbPdmhoVrQGmOuxZsMBkkSspHLUyo8twqSdDMLmN">
-      </div>
+{% block content %}
+<div class="jumbotron text-center">
+  <h1>Gishwati-Mukura National Park</h1>
+</div>
+<div class="well">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJF5b5Sst1Ybp5GiP3M8k1FhhT1S0RZH5lMb2YD7IT1071cefW3Q"
+    width="100%" height="400">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Gishwati-Mukura</h2>
+      <p>Gishwati-Mukura National Park is situated on the highest ridges of the Congo-Nile Divide along the
+        incredibly
+        biodiverse Albertine Rift in the west of the country.
+        Created only in 2015, this is Rwanda’s newest national park and one that plays an incredibly important role …
+        not
+        only in biodiversity conservation, but also in preserving and improving ecosystem services and in providing
+        an
+        economic engine for the upliftment of the surrounding communities that are integrally involved in its
+        protection.</p>
     </div>
+    <div class="col-md-4">
+      <p>Here visitors can experience not only chimpanzee and primate tracking, pristine montane forests and some of
+        Rwanda’s most exciting birding, but can also engage with friendly, rural people and know that their visit
+        will make
+        a difference!.</p>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxA_WY9V3ka1XQqgYeaSTp_b4hYiutFKr5YPCTHlsSXFwdCTnTw">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbvHpoauKBFhaGD-AgKt3ILIaDVdJF0eRyjghhoQyC5vJpbDHy">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAn10GxPzFBav0WxgLBK-c1d8oppXVHLUc7TCNshsXLJTHTYRm">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs4ncqde6nK_t48sHOU3Fh694ptrt2qmlIHHEv-m17IF_cE7Dw">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghX0okwEffbPdmhoVrQGmOuxZsMBkkSspHLUyo8twqSdDMLmN">
   </div>
-</body>
+</div>
+{% endblock %}

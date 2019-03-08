@@ -1,26 +1,45 @@
-{% extends 'base.html'%}
-{% import 'macros.html' as macro%}
+{% extends 'bootstrap/base.html'%}
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
 <!-- Styles block -->
 
 {% block styles%}
 {{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='CSS/index.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='CSS/index2.css')}}">
 {% endblock %}
-
 {% block content %}
-<div class="container-fluid mt-3" text-align="center">
+<div class="container-fluid mt-3" style="background-size:cover; background-image:url(https://www.visitrwanda.com/wp-content/uploads/fly-images/1689/Visit-Rwanda-NH_OO_Activities_Colobus_Monkey_Trek_2649_MASTER-1-1280x905.jpg);height:650px">
+  <h1>{{title}}</h1>
+  <div class="selectpitch" text-align="center">
+    <ul class="category">
+      <li><a href="{{url_for('main.Volcanos')}}">Volcanoes National Park</a></li>
+      <li><a href="{{url_for('main.Akagera')}}">Akagera National Park</a></li>
+      <li><a href="{{url_for('main.Royal')}}"> Royal Palace, Nyanza</a></li>
+      <li><a href="{{url_for('main.Nyungwe')}}">Nyungwe Forest National Park</a></li>
+      <li><a href="{{url_for('main.Gisuma')}}">Gisuma</a></li>
+      <li><a href="{{url_for('main.Kivu')}}"> Gishwati Forest National Park</a></li>
+    </ul>
 
-  <div class="selectpitch">
-
-    <a href="{{url_for('main.Volcanos')}}">Volcanos National Park|</a>&nbsp;
-    <a href="{{url_for('main.Akagera')}}">Akagera National Park |</a>&nbsp;
-    <a href="{{url_for('main.Royal')}}"> Royal Palace, Nyanza|</a>&nbsp;
-    <a href="{{url_for('main.Nyungwe')}}">Nyungwe Forest National Park|</a>&nbsp;
-
-    <a href="{{url_for('main.Gisuma')}}">Gisuma|</a>&nbsp;
-    <a href="{{url_for('main.Kivu')}}"> Gishwati Forest National Park|</a>&nbsp;
-
-
+  </div>
+</div>
+<div>
+  <h1>Tourism in Rwanda</h1>
+  <div class="well">
+    <div class="row">
+      <div class="col-md-4" text-align="center">
+        <p>
+          Known as the land of a thousand hills,
+          Rwanda’s
+          stunning
+          scenery and
+          warm, friendly
+          people offer unique
+          experiences in one of the most remarkable countries in the world. It is blessed with extraordinary
+          biodiversity,
+          with incredible wildlife living throughout its volcanoes, montane rainforest and sweeping plains.</p>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
