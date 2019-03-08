@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +11,13 @@
 
   {% block content%}
   <center><h2 style="background-color:grey;">WELCOME</h2>
-
    
  
       <blockquote class="text-center text-lg">
  <div class="container">
    
     
-    <p>Already signed in? Write your comment <a href="/comment/new"><button>Comment</button></a>
+    <p>Already signed in? Write your comment <a href="/comment/new"><button>Comment</button></a><br>
                 {% for comment in comments %} 
                 <p>{{ comment.comments }}</p>
         <br>

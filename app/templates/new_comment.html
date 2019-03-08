@@ -1,9 +1,11 @@
+{% extends 'base.html' %}
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block content %}
 
-      
-<div class="col-md-4">
+  <div claas= first>  
+<blockquote class="text-center text-lg">
+  <div class="container">
     
         {{ wtf.quick_form(comment_form) }}
         {% for comment in comments%} 
@@ -11,4 +13,5 @@
 
   {% endfor %}
 </div>
+</div> 
  {% endblock %}

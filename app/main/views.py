@@ -34,17 +34,3 @@ def new_comment():
     return render_template('new_comment.html', comment_form= form, comment=comments) 
 
 
-
-# @main.route('/comment/new/<int:id>', methods=['GET', 'POST'])
-
-# def new_comment(id):
-#    comment_form = CommentForm()
-# #    comments=Comment.query.filter_by(comment_id=id).all()
-#    if comment_form.validate_on_submit():
-#        description = comment_form.description.data
-#        print(comment)
-#        new_comment = Comment(description=description)
-#        new_comment.save_comments()
-#        return redirect(url_for('main.index'))
-
-#    return render_template('new_comment.html',comment_form=comment_form)

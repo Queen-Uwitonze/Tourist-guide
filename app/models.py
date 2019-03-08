@@ -4,7 +4,6 @@ class Site(db.Model):
     id = db.Column(db.Integer,primary_key = True)
     name = db.Column(db.String(255))
     category = db.Column(db.String(255))
-    reviews = db.relationship('Review',backref = 'site',lazy="dynamic")
     comments = db.relationship('Comment',backref = 'site',lazy="dynamic")
    
     def __repr__(self):
@@ -36,14 +35,4 @@ class Comment(db.Model):
     def __repr__(self):
         return f'Site {self.comment}' 
 
-class Review(db.Model):
-    __tablename__ = 'reviews'
-    id = db.Column(db.Integer,primary_key = True)
-    rate = db.Column(db.Integer())  
-    site_id = db.Column(db.Integer,db.ForeignKey('sites.id'))
 
-
-    def save_review(self):
-       db.session.add(self)
-       db.session.commit() 
-  
