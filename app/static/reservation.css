@@ -2,7 +2,8 @@ h1{
     display: inline; 
     /* width: 100px;
     height: 100px; */
-    color:green;
+    color:darkslategrey;
+    
 }
 
 nav{
@@ -21,9 +22,13 @@ a{
   font-family: monospace;
 }
 *{
-    background-color: gainsboro;
+    /* background-image: url("https://www.millecollines.rw/wp-content/uploads/2017/06/image3-1-1.jpg"); */
+    color:darkslategrey;
+    /* background-image:cover;  */
+    background-color:ghostwhite;
+    font-family: monospace;
 }
-.conv{
+/* .conv{
     float: left;
 }
 .conv p{
@@ -38,39 +43,80 @@ a{
 .mille{
     float: left;
 }
+.mille p{
+    float: left;
+}
 .serena{
     float: right;
 }
+.serena p{
+    float: right;
+}
+
 .serenagi{
+    float: left;
+}
+.serenagi p{
     float: left;
 }
 .bisate{
     float: right;
 }
+.bisate p{
+    float: right;
+}
 .muhabura{
+    float: left;
+}
+.muhabura p{
     float: left;
 }
 .sunview{
     float: right;
 }
+.sunview p{
+    float: right;
+}
 .asante{
     float: left;
 }
+.asante p{
+    float: left;
+}
+
 .palm{
+    float: right;
+}
+.palm p{
     float: right;
 }
 .lapalme{
     float: left;
 }
+.lapalme p{
+    float: left;
+}
 .virunga{
+    float: right; 
+}
+.virunga p{
     float: right; 
 }
 .Belvedere{
     float: left;
 }
-.hillview{
+.Belvedere p{
+    float: left;
+}
+/* .hillview{
+    float: right;
+} */
+.hillview p{
     float: right;
 }
 .paradise{
     float: left;
 }
+.paradise p{
+    float: left;
+} */
